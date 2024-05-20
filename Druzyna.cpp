@@ -1,6 +1,6 @@
 #include "Druzyna.h"
 
-void Druzyna::zmienNazwe(string nazwa) {
+void Druzyna::zmienNazwe(std::string nazwa) {
 
 }
 

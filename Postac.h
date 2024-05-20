@@ -1,17 +1,18 @@
 #if !defined(_POSTAC_H)
 #define _POSTAC_H
 
-
+#include <string>
+#include <vector>
 class Postac {
 public:
-	string wyswietlSzczegoly();
+	std::string wyswietlSzczegoly();
 private:
-	string nazwa;
+	std::string nazwa;
 	int hp;
-	string opis;
+	std::string opis;
 	int cena;
 	int dmg;
-	vector<string> kody;
+	std::vector<std::string> kody;
 	int poziom;
 };
 

@@ -3,12 +3,16 @@
 
 #include "RankingMenu.h"
 
+#include "Uzytkownik.h"
+
+#include <vector>
+
 class Ranking : public RankingMenu {
 public:
 	void pokazTop10();
 	void rozdajNagrody();
 private:
-	vector<Uzytkownik> listaRankingowaUzytkownikow;
+	std::vector<Uzytkownik> listaRankingowaUzytkownikow;
 };
 
 #endif  //_RANKING_H

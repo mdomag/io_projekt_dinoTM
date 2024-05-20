@@ -1,6 +1,11 @@
 #if !defined(_UZYTKOWNIK_H)
 #define _UZYTKOWNIK_H
 
+#include "Postac.h"
+#include "Druzyna.h"
+
+#include <string>
+#include <vector>
 
 class Uzytkownik {
 public:
@@ -9,14 +14,14 @@ public:
 	void otworzRanking();
 	void otworzSklep();
 private:
-	string nazwa;
+	std::string nazwa;
 	int monety;
-	string login;
-	vector<Postac> odblokowanePostacie;
-	vector<Druzyna> druzyny;
+	std::string login;
+	std::vector<Postac> odblokowanePostacie;
+	std::vector<Druzyna> druzyny;
 	int punktyRankingowe;
 	int id;
-	string password;
+	std::string password;
 };
 
 #endif  //_UZYTKOWNIK_H

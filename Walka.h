@@ -4,6 +4,7 @@
 #include "WalkaMenu.h"
 #include "Bot.h"
 #include "Druzyna.h"
+#include "Uzytkownik.h"
 
 class Walka : public WalkaMenu {
 public:
@@ -16,7 +17,7 @@ public:
 private:
 	Uzytkownik* uzytkownik;
 	Bot* przeciwnik;
-	boolean wynikWalki;
+	bool wynikWalki;
 };
 
 #endif  //_WALKA_H

@@ -1,6 +1,6 @@
 #include "Postac.h"
 
-string Postac::wyswietlSzczegoly() {
+std::string Postac::wyswietlSzczegoly() {
 
 }
 

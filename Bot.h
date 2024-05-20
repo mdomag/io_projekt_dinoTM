@@ -2,12 +2,13 @@
 #define _BOT_H
 
 #include "Druzyna.h"
+#include <string>
 
 class Bot {
 public:
 	Druzyna losujDruzyne();
 private:
-	string nazwa;
+	std::string nazwa;
 	Druzyna druzyna;
 };
 

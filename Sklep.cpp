@@ -4,7 +4,7 @@ void Sklep::kupPostac() {
 
 }
 
-void Sklep::wprowadzKodPostaci(string kod) {
+void Sklep::wprowadzKodPostaci(std::string kod) {
 
 }
 
