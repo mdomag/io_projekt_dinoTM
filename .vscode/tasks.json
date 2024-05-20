@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "compile",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-o", "${fileDirname}/program",
+                "${fileDirname}/*.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compiling all.cpp files in the current directory."
+        }
+    ]
+}

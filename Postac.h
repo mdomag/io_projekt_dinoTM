@@ -6,8 +6,9 @@
 class Postac {
 public:
 	std::string wyswietlSzczegoly();
-private:
 	std::string nazwa;
+private:
+	
 	int hp;
 	std::string opis;
 	int cena;
