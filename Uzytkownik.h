@@ -15,6 +15,8 @@ private:
 	vector<Postac> odblokowanePostacie;
 	vector<Druzyna> druzyny;
 	int punktyRankingowe;
+	int id;
+	string password;
 };
 
 #endif  //_UZYTKOWNIK_H

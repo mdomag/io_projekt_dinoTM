@@ -5,7 +5,7 @@
 
 class BazaDanychUzytkownicy : public LogowanieMenu {
 public:
-	vector<int, string, string> uzytkownicy;
+	vector<Uzytkownik> uzytkownicy;
 	void sprawdzCzyUzytkownikIstnieje();
 	void zaloguj();
 	void dodajUzytkownika();
