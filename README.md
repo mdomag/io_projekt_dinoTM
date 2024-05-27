@@ -33,6 +33,9 @@ to run in vs code
    2. trzeba zaimplemetnowac sort no to prosto vectora z DB posortowac wg rankingu
 7. implementacja Fight:
    1. to ma dzialac tak ze showMenu najpier wyweitla rozne info i wyswietla druzyny displayPlayersTeams() i one sa ponumerowane, user wpisuje numer duryzny ktora wybiera i to jest przekazywane do startFight
-   2. w starFight jest caly przebieg gry
+   2. trzeba skopiowac druzyne playera zeby nie modyfikowac tej oryginalnej !!!
+   3. w starFight jest caly przebieg gry
       1. tutaj najpierw generuje sie bota (jak? tbh mozna i randomowo bololo tylko zeby byla ta sama liczba co w wybranej druzynie)
+      2. mozna wywalic nick bota albo vectora z nickami i losowac
+      3. 
 
