@@ -12,11 +12,20 @@
 #include "ShopMenu.h"
 #include "Team.h"
 #include "TeamMenu.h"
+#include "Login.h"
+
+#include <cstdio>
 
 int main() {
-    LoginMenu* loginMenu = new PlayerDataBase();
+    PlayerDataBase* playerDB = new PlayerDataBase();
+    LoginMenu* loginMenu = new Login(playerDB);
     Player* currentPlayer = loginMenu->showMenu();
-    currentPlayer->showInfo();
-    currentPlayer->showCharacters();
+    printf("showing players:\n");
+    vector<Player*> players = playerDB->getPlayers();
+    for(auto player: players) {
+        player->showInfo();
+    }
+    
+
     return 0;
 }

@@ -10,7 +10,7 @@ public:
     void sortPlayers();
     void showPlayerInfo();
     void showInfo() override;
-    Leaderboard(PlayerDataBase playerDB): playersLeaderboard(playerDB.getPlayers()) {}
+    Leaderboard(PlayerDataBase* playerDB): playersLeaderboard(playerDB->getPlayers()) {}
 
 private:
     vector <Player*> playersLeaderboard;

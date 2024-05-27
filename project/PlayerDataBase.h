@@ -9,16 +9,13 @@
 
 using namespace std;
 
-class PlayerDataBase : public LoginMenu {
+class PlayerDataBase {
 public:
-    Player* showMenu() override;
     bool checkUserExists(string nick);
-    Player* registerPlayer() override;
     void addPlayer(Player* player);
-    Player* login() override;
     Player* checkPassword(string nick, string password);
     vector<Player *> getPlayers();
-
+    int getPlayersSize();
 private:
     vector<Player*> players;
 };
