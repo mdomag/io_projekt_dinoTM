@@ -2,7 +2,7 @@
 
 to run in vs code 
 
-`` g++ -o main main.cpp Bot.cpp Character.cpp Fight.cpp Leaderboard.cpp Player.cpp PlayerDataBase.cpp Shop.cpp Team.cpp TeamMenu.cpp ``
+`` g++ -o main main.cpp Bot.cpp Character.cpp Fight.cpp Leaderboard.cpp Player.cpp PlayerDataBase.cpp Shop.cpp Team.cpp TeamMenu.cpp Login.cpp``
 
 `` ./main ``
 
