@@ -10,8 +10,22 @@ class Team {
 public:
     void changeName(string name);
     void change();
+<<<<<<< HEAD
     void showInfo() {}
     Team(string n): name(n) {}
+=======
+    Team(string n, vector<Character> characters){
+        name = n;
+        team = characters;
+        charactersCount = characters.size();
+        
+        int level_sum = 0;
+        for (Character c : characters){
+            level_sum+=c.getLevel();
+        }
+        level = level_sum/charactersCount;
+    }
+>>>>>>> origin/main
     Team() {}
 private:
     vector<Character> team;
@@ -21,3 +35,5 @@ private:
 };
 
 #endif  //_TEAM_H
+
+

@@ -4,3 +4,7 @@ void Character::showInfo() {
     printf("name: %s hp: %d dmg: %d level: %d\n", name.c_str(), hp, dmg, level);
 }
 
+int Character::getLevel(){
+    return this->level;
+}
+

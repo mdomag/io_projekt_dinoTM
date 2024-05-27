@@ -1,5 +1,5 @@
 #include "TeamMenu.h"
-//oglnie to bym zrobila to na voida
+
 Team TeamMenu::createTeam(string n, Player& player)
 {
     for(auto it = player.teams.begin(); it != player.teams.end(); it++) {
@@ -20,9 +20,9 @@ Team TeamMenu::createTeam(string n, Player& player)
         team.characters.push_back(player.unlockedCharacters[number]);
     }
 
-    player.teams.push_back(Team(n));
+    player.teams.push_back(team);
     printf("Team %s created\n", n.c_str());
-    return Team(n);
+    return team;
 }
 
 void TeamMenu::deleteTeam(string n, Player& player)

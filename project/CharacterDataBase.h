@@ -7,6 +7,7 @@ using namespace std;
 
 class CharacterDataBase {
 public:
+    //index, hp, name, code, level, damage
     vector<Character> characters = {
     Character(1, 100, "Tyrannosaurus", "TYR", 10, 50),
     Character(2, 80, "Velociraptor", "VEL", 8, 40),
