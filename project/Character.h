@@ -8,6 +8,9 @@ class Character {
 public:
     void showInfo();
     int getLevel();
+    std::string getName();
+    int getId();
+    std::string getCode();
     Character(int i, int h, string n, string c, int l, int d): id(i), hp(h), name(n), code(c), level(l), dmg(d) {}
 private:
     int id;
