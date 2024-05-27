@@ -10,14 +10,25 @@ class Team {
 public:
     void changeName(string name);
     void change();
-    Team(string n): name(n) {}
+    Team(string n, vector<Character> characters){
+        name = n;
+        team = characters;
+        charactersCount = characters.size();
+        
+        int level_sum = 0;
+        for (Character c : characters){
+            level_sum+=c.getLevel();
+        }
+        level = level_sum/charactersCount;
+    }
     Team() {}
-    int getTeamSize();
 private:
     vector<Character> team;
     string name;
     int level;
-    //int charactersCount; //nie jes potrzebne 
+    int charactersCount;
 };
 
 #endif  //_TEAM_H
+
+
