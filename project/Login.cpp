@@ -6,7 +6,7 @@ Player* Login::login() {
     cout << "enter nick: ";
     getline(cin, nick);
     while (!playersDB->checkUserExists(nick)) {
-        cout << "Wrong nick" << endl;
+        cout << "wrong nick" << endl;
         cout << "enter nick: ";
         getline(cin, nick);
     }

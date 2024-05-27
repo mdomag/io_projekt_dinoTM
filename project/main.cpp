@@ -25,7 +25,8 @@ int main() {
     for(auto player: players) {
         player->showInfo();
     }
-    
+    LeaderboardMenu* leaderBoard = new Leaderboard(playerDB);
+    leaderBoard->showInfo();
 
     return 0;
 }
