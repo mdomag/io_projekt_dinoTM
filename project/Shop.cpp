@@ -3,19 +3,31 @@
 #include <cstdlib>
 #include <cstdio>
 
-void Shop::buyCharacter(int character) {
-
-}
-
-void Shop::enterCharacterCode(string code) {
-
-}
-
-void Shop::showMenu() {
+void Shop::buyCharacter() {
     printf("shop inventory:\n");
     for(auto character: inventory) {
         character.showInfo();
     }
+}
+
+void Shop::enterCharacterCode() {
+
+}
+
+void Shop::showMenu() {
+    int option;
+    printf("buy character[0], enter character code[1], exit[2]: ");
+    scanf("%d", option);
+    if(!option) {
+        buyCharacter();
+    }
+    else if(option == 1) {
+        enterCharacterCode();
+    }
+    else {
+        //jakos exit
+    }
+
 }
 
 Shop::Shop(CharacterDataBase *characterDB) {
