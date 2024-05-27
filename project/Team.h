@@ -10,6 +10,7 @@ class Team {
 public:
     void changeName(string name);
     void change();
+    void showInfo() {}
     Team(string n): name(n) {}
     Team() {}
 private:
