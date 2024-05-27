@@ -10,6 +10,7 @@ class Team {
 public:
     void changeName(string name);
     void change();
+    int getTeamSize();
     void showInfo() {}
     Team(string n): name(n) {}
     Team(string n, vector<Character> characters){
