@@ -12,7 +12,7 @@ to run in vs code
 //TODO
 ```
 (stink javovy)
-
+DODAC METODE UPDATEFROMPLAYERDB() DO LEADERBOARD PO KAZDEJ WALCE
 >> na razie zrobione jest tylko logowanie/rejestracja i zapelniona characterDB
 
 1. uzupelnienie randomowymi danymi PlayerDB -> przy czym prosze o tworzenie tym konstruktorem: 
