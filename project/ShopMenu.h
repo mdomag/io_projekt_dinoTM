@@ -1,14 +1,17 @@
 #if !defined(_SHOPMENU_H)
 #define _SHOPMENU_H
+#include "Character.h"
 
 #include <string>
 using namespace std;
 
+class Player;
+
 class ShopMenu {
 public:
-    virtual void buyCharacter() = 0;
-    virtual void enterCharacterCode() = 0;
-    virtual void showMenu() = 0;
+    virtual Character buyCharacter(int character) = 0;
+    virtual Character enterCharacterCode(string code) = 0;
+    virtual void showMenu(Player* player) = 0;
 };
 
 
