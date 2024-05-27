@@ -3,16 +3,15 @@
 
 #include "ShopMenu.h"
 #include "Character.h"
-#include "CharacterDataBase.h"
 
 #include <vector>
 using namespace std;
 class Shop : public ShopMenu {
 public:
-    void buyCharacter() override;
-    void enterCharacterCode() override;
-    void showMenu() override;
-    Shop(CharacterDataBase* characterDB);
+    Character buyCharacter(int character) override;
+    Character enterCharacterCode(string code) override;
+    void showMenu(Player* player) override;
+    vector<Character> generateInventory();
 private:
     vector<Character> inventory;
 };
