@@ -7,7 +7,7 @@ using namespace std;
 
 class CharacterDataBase {
 public:
-    //index, hp, name, code, level, damage
+    void showAllCharacters();
     vector<Character> characters = {
     Character(1, 100, "Tyrannosaurus", "TYR", 10, 50),
     Character(2, 80, "Velociraptor", "VEL", 8, 40),
@@ -30,6 +30,7 @@ public:
     Character(19, 215, "Xenotarsosaurus", "XNT", 26, 130),
     Character(20, 225, "Zephyrosaurus", "ZPH", 27, 135)
 };
+
 
 };
 
