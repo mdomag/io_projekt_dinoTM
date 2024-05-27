@@ -1,8 +1,10 @@
 #include "Player.h"
 #include <cstdio>
+#include "Shop.h"
 
 void Player::openTeamMenu() {
-
+    printf("your current team: \n");
+    //
 }
 
 void Player::openLeaderboardMenu() {
@@ -10,7 +12,8 @@ void Player::openLeaderboardMenu() {
 }
 
 void Player::openShopMenu() {
-
+    Shop shop;
+    shop.showMenu(this);
 }
 
 void Player::openFightMenu() {
