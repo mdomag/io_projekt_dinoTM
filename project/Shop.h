@@ -3,6 +3,7 @@
 
 #include "ShopMenu.h"
 #include "Character.h"
+#include "CharacterDataBase.h"
 
 #include <vector>
 using namespace std;
@@ -11,7 +12,7 @@ public:
     void buyCharacter(int character) override;
     void enterCharacterCode(string code) override;
     void showMenu() override;
-    vector<Character> generateInventory();
+    Shop(CharacterDataBase* characterDB);
 private:
     vector<Character> inventory;
 };

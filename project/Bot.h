@@ -7,12 +7,15 @@
 using namespace std;
 class Bot {
 public:
-    Bot(Team t) : team(t) {}
+    Bot(Team t) : team(t) {
+        this->size = t.getTeamSize();
+    }
     int randomizeAttacker();
     int randomizeVictim();
 private:
     string nick;
     Team team;
+    int size;
 };
 
 #endif  //_BOT_H

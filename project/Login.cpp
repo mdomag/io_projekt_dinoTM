@@ -58,7 +58,7 @@ Player* Login::showMenu() {
         while (currentPlayer == nullptr) {
             currentPlayer = login();
         }
-        cout << "you are now logged in";
+        cout << "you are now logged in" << endl;
     }
     return currentPlayer;
 }

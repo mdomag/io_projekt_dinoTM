@@ -1,10 +1,14 @@
 #include "Bot.h"
+#include <ctime>
+#include <cstdlib>
 
 int Bot::randomizeAttacker() {
-    return 0;
+    srand(time(0));
+    return rand() % size;
 }
 
 int Bot::randomizeVictim() {
-    return 0;
+    srand(time(0));
+    return rand() % size;
 }
 

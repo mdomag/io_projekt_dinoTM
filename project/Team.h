@@ -12,11 +12,12 @@ public:
     void change();
     Team(string n): name(n) {}
     Team() {}
+    int getTeamSize();
 private:
     vector<Character> team;
     string name;
     int level;
-    int charactersCount;
+    //int charactersCount; //nie jes potrzebne 
 };
 
 #endif  //_TEAM_H
