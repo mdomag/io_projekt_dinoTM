@@ -10,10 +10,8 @@ class Team {
 public:
     void changeName(string name);
     void change();
-<<<<<<< HEAD
     void showInfo() {}
     Team(string n): name(n) {}
-=======
     Team(string n, vector<Character> characters){
         name = n;
         team = characters;
@@ -25,7 +23,6 @@ public:
         }
         level = level_sum/charactersCount;
     }
->>>>>>> origin/main
     Team() {}
 private:
     vector<Character> team;

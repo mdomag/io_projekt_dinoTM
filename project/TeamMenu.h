@@ -5,11 +5,11 @@
 
 class TeamMenu {
 public:
-    Team createTeam(string n);
-    void deleteTeam();
-    void modifyTeam();
-    void showTeams();
-    void showMenu();
+    Team createTeam(string n, Player* p);
+    void deleteTeam(string n, Player* p);
+    void modifyTeam(string n, Player* p);
+    void showTeams(Player* p);
+    void showMenu(Player* p);
 };
 
 #endif  //_TEAMMENU_H

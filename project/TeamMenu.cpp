@@ -17,6 +17,7 @@ Team TeamMenu::createTeam(string n, Player& player)
     for(int i= 0; i < 3; i++) {
         int number;
         std::cin >> number;
+        //TU MOZE BYC BLAD BO CHARACTER JEST PRIVATE
         team.characters.push_back(player.unlockedCharacters[number]);
     }
 
@@ -71,7 +72,7 @@ void TeamMenu::showTeams(Player& player)
     }
 }
 
-void TeamMenu::showMenu()
+void TeamMenu::showMenu(Player& player)
 {
     printf("create team[0], delete team[1], modify team[2], show teams[3], exit[4]\n");
     int option;
@@ -81,20 +82,20 @@ void TeamMenu::showMenu()
         case 0:
             printf("Enter new team name: ");
             std::cin >> teamName;
-            createTeam(teamName);
+            createTeam(teamName, player);
             break;
         case 1:
             printf("Enter team name to delete: ");
             std::cin >> teamName;
-            deleteTeam(teamName);
+            deleteTeam(teamName, player);
             break;
         case 2:
             printf("Enter team name to modify: ");
             std::cin >> teamName;
-            modifyTeam(teamName);
+            modifyTeam(teamName, player);
             break;
         case 3:
-            showTeams();
+            showTeams(player);
             break;
         case 4:
             break;
